@@ -16,6 +16,7 @@ This project demonstrates how to deploy a Solidity smart contract to the Ethereu
 * MetaMask
 * Alchemy API
 * Sepolia Test Network
+* Etherscan
 
 ---
 
