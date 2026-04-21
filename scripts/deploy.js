@@ -1,12 +1,12 @@
 async function main() {
-    const Web3 = await ethers.getContractFactory("Web3");
 
-    // Start deployment, returning a promise that resolves to a contract object
-    const web3 = await Web3.deploy("Hello World!");
+    const SimpleBank = await ethers.getContractFactory("SimpleBank");
 
-    await web3.deployed();
+    const simpleBank = await SimpleBank.deploy();
 
-    console.log("Contract deployed to address:", web3.address);
+    await simpleBank.deployed();
+
+    console.log("Contract deployed to address:", simpleBank.address);
 }
 
 main()
